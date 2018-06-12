@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0498EF6520CF7C1800E2861F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498EF6420CF7C1800E2861F /* ViewController.m */; };
+		0498EF6F20CF7C6300E2861F /* ZXMixPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498EF6820CF7C6300E2861F /* ZXMixPlayer.m */; };
+		0498EF7020CF7C6300E2861F /* ZXNowPlayingInfoCenterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498EF6A20CF7C6300E2861F /* ZXNowPlayingInfoCenterHelper.m */; };
+		0498EF7120CF7C6300E2861F /* ZXSingletonPlayer+audioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498EF6C20CF7C6300E2861F /* ZXSingletonPlayer+audioPlayer.m */; };
+		0498EF7220CF7C6300E2861F /* ZXSingletonPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498EF6E20CF7C6300E2861F /* ZXSingletonPlayer.m */; };
+		0498EF8220CF7C6C00E2861F /* dice1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7420CF7C6C00E2861F /* dice1.png */; };
+		0498EF8320CF7C6C00E2861F /* dice2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7520CF7C6C00E2861F /* dice2.png */; };
+		0498EF8420CF7C6C00E2861F /* dice3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7620CF7C6C00E2861F /* dice3.png */; };
+		0498EF8520CF7C6C00E2861F /* dice4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7720CF7C6C00E2861F /* dice4.png */; };
+		0498EF8620CF7C6C00E2861F /* dice5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7820CF7C6C00E2861F /* dice5.png */; };
+		0498EF8720CF7C6C00E2861F /* dice6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7920CF7C6C00E2861F /* dice6.png */; };
+		0498EF8820CF7C6C00E2861F /* dice_f1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7A20CF7C6C00E2861F /* dice_f1.png */; };
+		0498EF8920CF7C6C00E2861F /* dice_f2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7B20CF7C6C00E2861F /* dice_f2.png */; };
+		0498EF8A20CF7C6C00E2861F /* dice_f3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7C20CF7C6C00E2861F /* dice_f3.png */; };
+		0498EF8B20CF7C6C00E2861F /* dice_f4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF7D20CF7C6C00E2861F /* dice_f4.png */; };
+		0498EF8C20CF7C6C00E2861F /* LHDiceAnimationView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498EF7F20CF7C6C00E2861F /* LHDiceAnimationView+Tools.m */; };
+		0498EF8D20CF7C6C00E2861F /* LHDiceAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498EF8120CF7C6C00E2861F /* LHDiceAnimationView.m */; };
+		0498EF9020CF7CD200E2861F /* rotate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF8E20CF7CD200E2861F /* rotate.mp3 */; };
+		0498EF9120CF7CD200E2861F /* location.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0498EF8F20CF7CD200E2861F /* location.mp3 */; };
+		04CA999F20CF7A0D000861CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA999E20CF7A0D000861CC /* AppDelegate.m */; };
+		04CA99A520CF7A0D000861CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CA99A320CF7A0D000861CC /* Main.storyboard */; };
+		04CA99A720CF7A0E000861CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CA99A620CF7A0E000861CC /* Assets.xcassets */; };
+		04CA99AA20CF7A0E000861CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CA99A820CF7A0E000861CC /* LaunchScreen.storyboard */; };
+		04CA99AD20CF7A0E000861CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA99AC20CF7A0E000861CC /* main.m */; };
+		04CA99B720CF7A0E000861CC /* LHDiceAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA99B620CF7A0E000861CC /* LHDiceAnimationTests.m */; };
+		04CA99C220CF7A0E000861CC /* LHDiceAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA99C120CF7A0E000861CC /* LHDiceAnimationUITests.m */; };
+		2A0568E6AA51BEB02A4390F7 /* libPods-LHDiceAnimationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4C679C261E09A5394E4506 /* libPods-LHDiceAnimationTests.a */; };
+		C9F810A4246925386CB16473 /* libPods-LHDiceAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5802A19458FDE346B0E7761 /* libPods-LHDiceAnimation.a */; };
+		DAC4FC3C99844B560E63C71B /* libPods-LHDiceAnimationUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667B3FC5F67A84FD9748A5F6 /* libPods-LHDiceAnimationUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04CA99B320CF7A0E000861CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04CA999220CF7A0D000861CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CA999920CF7A0D000861CC;
+			remoteInfo = LHDiceAnimation;
+		};
+		04CA99BE20CF7A0E000861CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04CA999220CF7A0D000861CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CA999920CF7A0D000861CC;
+			remoteInfo = LHDiceAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0498EF6320CF7C1800E2861F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0498EF6420CF7C1800E2861F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0498EF6720CF7C6300E2861F /* ZXMixPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMixPlayer.h; sourceTree = "<group>"; };
+		0498EF6820CF7C6300E2861F /* ZXMixPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMixPlayer.m; sourceTree = "<group>"; };
+		0498EF6920CF7C6300E2861F /* ZXNowPlayingInfoCenterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNowPlayingInfoCenterHelper.h; sourceTree = "<group>"; };
+		0498EF6A20CF7C6300E2861F /* ZXNowPlayingInfoCenterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNowPlayingInfoCenterHelper.m; sourceTree = "<group>"; };
+		0498EF6B20CF7C6300E2861F /* ZXSingletonPlayer+audioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZXSingletonPlayer+audioPlayer.h"; sourceTree = "<group>"; };
+		0498EF6C20CF7C6300E2861F /* ZXSingletonPlayer+audioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZXSingletonPlayer+audioPlayer.m"; sourceTree = "<group>"; };
+		0498EF6D20CF7C6300E2861F /* ZXSingletonPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSingletonPlayer.h; sourceTree = "<group>"; };
+		0498EF6E20CF7C6300E2861F /* ZXSingletonPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSingletonPlayer.m; sourceTree = "<group>"; };
+		0498EF7420CF7C6C00E2861F /* dice1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice1.png; sourceTree = "<group>"; };
+		0498EF7520CF7C6C00E2861F /* dice2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice2.png; sourceTree = "<group>"; };
+		0498EF7620CF7C6C00E2861F /* dice3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice3.png; sourceTree = "<group>"; };
+		0498EF7720CF7C6C00E2861F /* dice4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice4.png; sourceTree = "<group>"; };
+		0498EF7820CF7C6C00E2861F /* dice5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice5.png; sourceTree = "<group>"; };
+		0498EF7920CF7C6C00E2861F /* dice6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice6.png; sourceTree = "<group>"; };
+		0498EF7A20CF7C6C00E2861F /* dice_f1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice_f1.png; sourceTree = "<group>"; };
+		0498EF7B20CF7C6C00E2861F /* dice_f2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice_f2.png; sourceTree = "<group>"; };
+		0498EF7C20CF7C6C00E2861F /* dice_f3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice_f3.png; sourceTree = "<group>"; };
+		0498EF7D20CF7C6C00E2861F /* dice_f4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice_f4.png; sourceTree = "<group>"; };
+		0498EF7E20CF7C6C00E2861F /* LHDiceAnimationView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LHDiceAnimationView+Tools.h"; sourceTree = "<group>"; };
+		0498EF7F20CF7C6C00E2861F /* LHDiceAnimationView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LHDiceAnimationView+Tools.m"; sourceTree = "<group>"; };
+		0498EF8020CF7C6C00E2861F /* LHDiceAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHDiceAnimationView.h; sourceTree = "<group>"; };
+		0498EF8120CF7C6C00E2861F /* LHDiceAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHDiceAnimationView.m; sourceTree = "<group>"; };
+		0498EF8E20CF7CD200E2861F /* rotate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rotate.mp3; sourceTree = "<group>"; };
+		0498EF8F20CF7CD200E2861F /* location.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = location.mp3; sourceTree = "<group>"; };
+		04CA999A20CF7A0D000861CC /* LHDiceAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHDiceAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CA999D20CF7A0D000861CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04CA999E20CF7A0D000861CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04CA99A420CF7A0D000861CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04CA99A620CF7A0E000861CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04CA99A920CF7A0E000861CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04CA99AB20CF7A0E000861CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CA99AC20CF7A0E000861CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04CA99B220CF7A0E000861CC /* LHDiceAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHDiceAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CA99B620CF7A0E000861CC /* LHDiceAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHDiceAnimationTests.m; sourceTree = "<group>"; };
+		04CA99B820CF7A0E000861CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CA99BD20CF7A0E000861CC /* LHDiceAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHDiceAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CA99C120CF7A0E000861CC /* LHDiceAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHDiceAnimationUITests.m; sourceTree = "<group>"; };
+		04CA99C320CF7A0E000861CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39CBC52E0CE31F03158A50C5 /* Pods-LHDiceAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHDiceAnimationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHDiceAnimationTests/Pods-LHDiceAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C4C679C261E09A5394E4506 /* libPods-LHDiceAnimationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LHDiceAnimationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		667B3FC5F67A84FD9748A5F6 /* libPods-LHDiceAnimationUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LHDiceAnimationUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DB08F31D7436808F3B832D /* Pods-LHDiceAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHDiceAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHDiceAnimation/Pods-LHDiceAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		C34407BEB0A694D621AF2FAC /* Pods-LHDiceAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHDiceAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-LHDiceAnimation/Pods-LHDiceAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		E312DFBC2D804F9D12C28EF3 /* Pods-LHDiceAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHDiceAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LHDiceAnimationTests/Pods-LHDiceAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		E5802A19458FDE346B0E7761 /* libPods-LHDiceAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LHDiceAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8FC797F11A88148AA5252A5 /* Pods-LHDiceAnimationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHDiceAnimationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LHDiceAnimationUITests/Pods-LHDiceAnimationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F4A968916D0E808AE5063BD8 /* Pods-LHDiceAnimationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHDiceAnimationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHDiceAnimationUITests/Pods-LHDiceAnimationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04CA999720CF7A0D000861CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F810A4246925386CB16473 /* libPods-LHDiceAnimation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CA99AF20CF7A0E000861CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0568E6AA51BEB02A4390F7 /* libPods-LHDiceAnimationTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CA99BA20CF7A0E000861CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC4FC3C99844B560E63C71B /* libPods-LHDiceAnimationUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0498EF6620CF7C6300E2861F /* ZXAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0498EF6720CF7C6300E2861F /* ZXMixPlayer.h */,
+				0498EF6820CF7C6300E2861F /* ZXMixPlayer.m */,
+				0498EF6920CF7C6300E2861F /* ZXNowPlayingInfoCenterHelper.h */,
+				0498EF6A20CF7C6300E2861F /* ZXNowPlayingInfoCenterHelper.m */,
+				0498EF6B20CF7C6300E2861F /* ZXSingletonPlayer+audioPlayer.h */,
+				0498EF6C20CF7C6300E2861F /* ZXSingletonPlayer+audioPlayer.m */,
+				0498EF6D20CF7C6300E2861F /* ZXSingletonPlayer.h */,
+				0498EF6E20CF7C6300E2861F /* ZXSingletonPlayer.m */,
+			);
+			path = ZXAudioPlayer;
+			sourceTree = "<group>";
+		};
+		0498EF7320CF7C6C00E2861F /* LHDiceAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				0498EF7420CF7C6C00E2861F /* dice1.png */,
+				0498EF7520CF7C6C00E2861F /* dice2.png */,
+				0498EF7620CF7C6C00E2861F /* dice3.png */,
+				0498EF7720CF7C6C00E2861F /* dice4.png */,
+				0498EF7820CF7C6C00E2861F /* dice5.png */,
+				0498EF7920CF7C6C00E2861F /* dice6.png */,
+				0498EF7A20CF7C6C00E2861F /* dice_f1.png */,
+				0498EF7B20CF7C6C00E2861F /* dice_f2.png */,
+				0498EF7C20CF7C6C00E2861F /* dice_f3.png */,
+				0498EF7D20CF7C6C00E2861F /* dice_f4.png */,
+				0498EF7E20CF7C6C00E2861F /* LHDiceAnimationView+Tools.h */,
+				0498EF7F20CF7C6C00E2861F /* LHDiceAnimationView+Tools.m */,
+				0498EF8020CF7C6C00E2861F /* LHDiceAnimationView.h */,
+				0498EF8120CF7C6C00E2861F /* LHDiceAnimationView.m */,
+			);
+			path = LHDiceAnimationView;
+			sourceTree = "<group>";
+		};
+		04CA999120CF7A0D000861CC = {
+			isa = PBXGroup;
+			children = (
+				04CA999C20CF7A0D000861CC /* LHDiceAnimation */,
+				04CA99B520CF7A0E000861CC /* LHDiceAnimationTests */,
+				04CA99C020CF7A0E000861CC /* LHDiceAnimationUITests */,
+				04CA999B20CF7A0D000861CC /* Products */,
+				18A99C60E513691D784C078B /* Pods */,
+				0829CD4507C5B6703AAC5880 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04CA999B20CF7A0D000861CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CA999A20CF7A0D000861CC /* LHDiceAnimation.app */,
+				04CA99B220CF7A0E000861CC /* LHDiceAnimationTests.xctest */,
+				04CA99BD20CF7A0E000861CC /* LHDiceAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04CA999C20CF7A0D000861CC /* LHDiceAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0498EF8F20CF7CD200E2861F /* location.mp3 */,
+				0498EF8E20CF7CD200E2861F /* rotate.mp3 */,
+				0498EF7320CF7C6C00E2861F /* LHDiceAnimationView */,
+				0498EF6620CF7C6300E2861F /* ZXAudioPlayer */,
+				04CA999D20CF7A0D000861CC /* AppDelegate.h */,
+				04CA999E20CF7A0D000861CC /* AppDelegate.m */,
+				0498EF6320CF7C1800E2861F /* ViewController.h */,
+				0498EF6420CF7C1800E2861F /* ViewController.m */,
+				04CA99A320CF7A0D000861CC /* Main.storyboard */,
+				04CA99A620CF7A0E000861CC /* Assets.xcassets */,
+				04CA99A820CF7A0E000861CC /* LaunchScreen.storyboard */,
+				04CA99AB20CF7A0E000861CC /* Info.plist */,
+				04CA99AC20CF7A0E000861CC /* main.m */,
+			);
+			path = LHDiceAnimation;
+			sourceTree = "<group>";
+		};
+		04CA99B520CF7A0E000861CC /* LHDiceAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				04CA99B620CF7A0E000861CC /* LHDiceAnimationTests.m */,
+				04CA99B820CF7A0E000861CC /* Info.plist */,
+			);
+			path = LHDiceAnimationTests;
+			sourceTree = "<group>";
+		};
+		04CA99C020CF7A0E000861CC /* LHDiceAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04CA99C120CF7A0E000861CC /* LHDiceAnimationUITests.m */,
+				04CA99C320CF7A0E000861CC /* Info.plist */,
+			);
+			path = LHDiceAnimationUITests;
+			sourceTree = "<group>";
+		};
+		0829CD4507C5B6703AAC5880 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5802A19458FDE346B0E7761 /* libPods-LHDiceAnimation.a */,
+				3C4C679C261E09A5394E4506 /* libPods-LHDiceAnimationTests.a */,
+				667B3FC5F67A84FD9748A5F6 /* libPods-LHDiceAnimationUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18A99C60E513691D784C078B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3DB08F31D7436808F3B832D /* Pods-LHDiceAnimation.debug.xcconfig */,
+				C34407BEB0A694D621AF2FAC /* Pods-LHDiceAnimation.release.xcconfig */,
+				39CBC52E0CE31F03158A50C5 /* Pods-LHDiceAnimationTests.debug.xcconfig */,
+				E312DFBC2D804F9D12C28EF3 /* Pods-LHDiceAnimationTests.release.xcconfig */,
+				F4A968916D0E808AE5063BD8 /* Pods-LHDiceAnimationUITests.debug.xcconfig */,
+				E8FC797F11A88148AA5252A5 /* Pods-LHDiceAnimationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04CA999920CF7A0D000861CC /* LHDiceAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CA99C620CF7A0E000861CC /* Build configuration list for PBXNativeTarget "LHDiceAnimation" */;
+			buildPhases = (
+				112BFD3D6EC7E0C55468A234 /* [CP] Check Pods Manifest.lock */,
+				04CA999620CF7A0D000861CC /* Sources */,
+				04CA999720CF7A0D000861CC /* Frameworks */,
+				04CA999820CF7A0D000861CC /* Resources */,
+				0ABE4175E7255737075F8278 /* [CP] Embed Pods Frameworks */,
+				565941F36D70AF4D30693C1E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHDiceAnimation;
+			productName = LHDiceAnimation;
+			productReference = 04CA999A20CF7A0D000861CC /* LHDiceAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04CA99B120CF7A0E000861CC /* LHDiceAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CA99C920CF7A0E000861CC /* Build configuration list for PBXNativeTarget "LHDiceAnimationTests" */;
+			buildPhases = (
+				5D404DA35B4B9D7FF7600885 /* [CP] Check Pods Manifest.lock */,
+				04CA99AE20CF7A0E000861CC /* Sources */,
+				04CA99AF20CF7A0E000861CC /* Frameworks */,
+				04CA99B020CF7A0E000861CC /* Resources */,
+				10B1A001D14E4A38C24FCA75 /* [CP] Embed Pods Frameworks */,
+				E77ED3A3507DDDC8D1EF1084 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04CA99B420CF7A0E000861CC /* PBXTargetDependency */,
+			);
+			name = LHDiceAnimationTests;
+			productName = LHDiceAnimationTests;
+			productReference = 04CA99B220CF7A0E000861CC /* LHDiceAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04CA99BC20CF7A0E000861CC /* LHDiceAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CA99CC20CF7A0E000861CC /* Build configuration list for PBXNativeTarget "LHDiceAnimationUITests" */;
+			buildPhases = (
+				C93EFD1227EF9D474135835A /* [CP] Check Pods Manifest.lock */,
+				04CA99B920CF7A0E000861CC /* Sources */,
+				04CA99BA20CF7A0E000861CC /* Frameworks */,
+				04CA99BB20CF7A0E000861CC /* Resources */,
+				68872A622421078776865888 /* [CP] Embed Pods Frameworks */,
+				2BDB0EC3695A574FF51C350D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04CA99BF20CF7A0E000861CC /* PBXTargetDependency */,
+			);
+			name = LHDiceAnimationUITests;
+			productName = LHDiceAnimationUITests;
+			productReference = 04CA99BD20CF7A0E000861CC /* LHDiceAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04CA999220CF7A0D000861CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = LIUHAO;
+				TargetAttributes = {
+					04CA999920CF7A0D000861CC = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					04CA99B120CF7A0E000861CC = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 04CA999920CF7A0D000861CC;
+					};
+					04CA99BC20CF7A0E000861CC = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 04CA999920CF7A0D000861CC;
+					};
+				};
+			};
+			buildConfigurationList = 04CA999520CF7A0D000861CC /* Build configuration list for PBXProject "LHDiceAnimation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04CA999120CF7A0D000861CC;
+			productRefGroup = 04CA999B20CF7A0D000861CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CA999920CF7A0D000861CC /* LHDiceAnimation */,
+				04CA99B120CF7A0E000861CC /* LHDiceAnimationTests */,
+				04CA99BC20CF7A0E000861CC /* LHDiceAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CA999820CF7A0D000861CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CA99AA20CF7A0E000861CC /* LaunchScreen.storyboard in Resources */,
+				04CA99A720CF7A0E000861CC /* Assets.xcassets in Resources */,
+				0498EF8320CF7C6C00E2861F /* dice2.png in Resources */,
+				0498EF8920CF7C6C00E2861F /* dice_f2.png in Resources */,
+				0498EF8820CF7C6C00E2861F /* dice_f1.png in Resources */,
+				0498EF8220CF7C6C00E2861F /* dice1.png in Resources */,
+				0498EF8420CF7C6C00E2861F /* dice3.png in Resources */,
+				0498EF9120CF7CD200E2861F /* location.mp3 in Resources */,
+				04CA99A520CF7A0D000861CC /* Main.storyboard in Resources */,
+				0498EF8620CF7C6C00E2861F /* dice5.png in Resources */,
+				0498EF8720CF7C6C00E2861F /* dice6.png in Resources */,
+				0498EF8520CF7C6C00E2861F /* dice4.png in Resources */,
+				0498EF8B20CF7C6C00E2861F /* dice_f4.png in Resources */,
+				0498EF8A20CF7C6C00E2861F /* dice_f3.png in Resources */,
+				0498EF9020CF7CD200E2861F /* rotate.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CA99B020CF7A0E000861CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CA99BB20CF7A0E000861CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ABE4175E7255737075F8278 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHDiceAnimation/Pods-LHDiceAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10B1A001D14E4A38C24FCA75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHDiceAnimationTests/Pods-LHDiceAnimationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		112BFD3D6EC7E0C55468A234 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LHDiceAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BDB0EC3695A574FF51C350D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHDiceAnimationUITests/Pods-LHDiceAnimationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		565941F36D70AF4D30693C1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHDiceAnimation/Pods-LHDiceAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D404DA35B4B9D7FF7600885 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LHDiceAnimationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68872A622421078776865888 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHDiceAnimationUITests/Pods-LHDiceAnimationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C93EFD1227EF9D474135835A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LHDiceAnimationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E77ED3A3507DDDC8D1EF1084 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHDiceAnimationTests/Pods-LHDiceAnimationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CA999620CF7A0D000861CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0498EF7020CF7C6300E2861F /* ZXNowPlayingInfoCenterHelper.m in Sources */,
+				0498EF6520CF7C1800E2861F /* ViewController.m in Sources */,
+				0498EF6F20CF7C6300E2861F /* ZXMixPlayer.m in Sources */,
+				04CA99AD20CF7A0E000861CC /* main.m in Sources */,
+				0498EF7220CF7C6300E2861F /* ZXSingletonPlayer.m in Sources */,
+				0498EF7120CF7C6300E2861F /* ZXSingletonPlayer+audioPlayer.m in Sources */,
+				0498EF8C20CF7C6C00E2861F /* LHDiceAnimationView+Tools.m in Sources */,
+				04CA999F20CF7A0D000861CC /* AppDelegate.m in Sources */,
+				0498EF8D20CF7C6C00E2861F /* LHDiceAnimationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CA99AE20CF7A0E000861CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CA99B720CF7A0E000861CC /* LHDiceAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CA99B920CF7A0E000861CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CA99C220CF7A0E000861CC /* LHDiceAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04CA99B420CF7A0E000861CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04CA999920CF7A0D000861CC /* LHDiceAnimation */;
+			targetProxy = 04CA99B320CF7A0E000861CC /* PBXContainerItemProxy */;
+		};
+		04CA99BF20CF7A0E000861CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04CA999920CF7A0D000861CC /* LHDiceAnimation */;
+			targetProxy = 04CA99BE20CF7A0E000861CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04CA99A320CF7A0D000861CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CA99A420CF7A0D000861CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04CA99A820CF7A0E000861CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CA99A920CF7A0E000861CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04CA99C420CF7A0E000861CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04CA99C520CF7A0E000861CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04CA99C720CF7A0E000861CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DB08F31D7436808F3B832D /* Pods-LHDiceAnimation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPAA6HBS48;
+				INFOPLIST_FILE = LHDiceAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lchd.LHDiceAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04CA99C820CF7A0E000861CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C34407BEB0A694D621AF2FAC /* Pods-LHDiceAnimation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPAA6HBS48;
+				INFOPLIST_FILE = LHDiceAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lchd.LHDiceAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		04CA99CA20CF7A0E000861CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39CBC52E0CE31F03158A50C5 /* Pods-LHDiceAnimationTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPAA6HBS48;
+				INFOPLIST_FILE = LHDiceAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lchd.LHDiceAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHDiceAnimation.app/LHDiceAnimation";
+			};
+			name = Debug;
+		};
+		04CA99CB20CF7A0E000861CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E312DFBC2D804F9D12C28EF3 /* Pods-LHDiceAnimationTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPAA6HBS48;
+				INFOPLIST_FILE = LHDiceAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lchd.LHDiceAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHDiceAnimation.app/LHDiceAnimation";
+			};
+			name = Release;
+		};
+		04CA99CD20CF7A0E000861CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A968916D0E808AE5063BD8 /* Pods-LHDiceAnimationUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPAA6HBS48;
+				INFOPLIST_FILE = LHDiceAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lchd.LHDiceAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LHDiceAnimation;
+			};
+			name = Debug;
+		};
+		04CA99CE20CF7A0E000861CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8FC797F11A88148AA5252A5 /* Pods-LHDiceAnimationUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPAA6HBS48;
+				INFOPLIST_FILE = LHDiceAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lchd.LHDiceAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LHDiceAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CA999520CF7A0D000861CC /* Build configuration list for PBXProject "LHDiceAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CA99C420CF7A0E000861CC /* Debug */,
+				04CA99C520CF7A0E000861CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CA99C620CF7A0E000861CC /* Build configuration list for PBXNativeTarget "LHDiceAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CA99C720CF7A0E000861CC /* Debug */,
+				04CA99C820CF7A0E000861CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CA99C920CF7A0E000861CC /* Build configuration list for PBXNativeTarget "LHDiceAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CA99CA20CF7A0E000861CC /* Debug */,
+				04CA99CB20CF7A0E000861CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CA99CC20CF7A0E000861CC /* Build configuration list for PBXNativeTarget "LHDiceAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CA99CD20CF7A0E000861CC /* Debug */,
+				04CA99CE20CF7A0E000861CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04CA999220CF7A0D000861CC /* Project object */;
+}
